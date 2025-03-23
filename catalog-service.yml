@@ -1,2 +1,13 @@
 polar:
   greeting: Welcome to the catalog form the config server
+
+eureka:
+  instance:
+    hostname: localhost
+    ip-address: 127.0.0.1
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
